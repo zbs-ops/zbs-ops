@@ -27,6 +27,13 @@ includes the parts that went badly.
 agent's command blocklist can be talked around. Blocklists were bypassed 31–78% of the time;
 an allowlist held at 0%. Builds on recent research whose authors released no code.
 
+**[US2GULF agent](https://github.com/zbs-ops/us2gulf-agent-report)** (case study): a car-import
+agent on a small self-hosted model that prices US auction cars for resale in the UAE. The
+model never states a fact or a number: tools read the auction page, price repairs, logistics
+and fees, and a reply guard replaces the model's text with the tools' output. The write-up
+covers every live failure (invented cars, forged reports, memory poisoning, context overflow)
+and the test that came out of each. Report only; the code is private.
+
 **[durastream](https://github.com/zbs-ops/durastream)**: a durable, replay-safe event log
 built from the storage layer up, with checksums and retention.
 
